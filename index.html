@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Room Chat + IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Créer une Room</h1>
+  <input type="text" id="roomName" placeholder="Nom de la room">
+  <button onclick="createRoom()">Créer la room</button>
+
+  <div id="chatRoom" class="hidden">
+    <h2>Chat Room: <span id="roomTitle"></span></h2>
+    <div id="chatBox"></div>
+    <input type="text" id="userInput" placeholder="Écris ici..." onkeydown="handleKey(event)">
+    <button onclick="talkToAI()">Envoyer</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
